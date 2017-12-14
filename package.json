@@ -6,11 +6,9 @@
   "scripts": {
     "lint": "standa",
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./cli.js README.md"
   },
-  "pre-commit": [
-    "lint"
-  ],
+  "pre-commit": [ "lint" ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fibo/markdown2code.git"
