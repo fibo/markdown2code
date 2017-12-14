@@ -1,6 +1,6 @@
 {
   "name": "markdown2code",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "extracts code blocks from markdown and streams it out as JSON",
   "bin": "./cli.js",
   "scripts": {
