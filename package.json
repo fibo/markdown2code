@@ -1,6 +1,6 @@
 {
   "name": "markdown2code",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "extracts code blocks from markdown and streams it out as JSON",
   "bin": "./cli.js",
   "scripts": {
@@ -8,7 +8,9 @@
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
     "test": "node ./cli.js README.md"
   },
-  "pre-commit": [ "lint" ],
+  "pre-commit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fibo/markdown2code.git"
