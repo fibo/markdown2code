@@ -1,0 +1,34 @@
+{
+  "name": "markdown2code",
+  "version": "0.0.0",
+  "description": "extracts code blocks from markdown and streams it out as JSON",
+  "bin": "./cli.js",
+  "scripts": {
+    "lint": "standa",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fibo/markdown2code.git"
+  },
+  "keywords": [
+    "markdown",
+    "literate-programming"
+  ],
+  "author": {
+    "name": "Gianluca Casati",
+    "url": "http://g14n.info"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fibo/markdown2code/issues"
+  },
+  "homepage": "https://github.com/fibo/markdown2code#readme",
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "standa": "^1.1.0"
+  }
+}
