@@ -1,0 +1,26 @@
+
+markdown2code v0.2.0 (https://github.com/fibo/markdown2code#readme)
+
+> extracts code blocks (surrounded by triple backticks) from markdown and streams it out as text or JSON
+
+### Usage
+
+    markdown2code [--format JSON|text] [--lang <language>] file.md
+
+### Options
+
+* -f --format [text|JSON] output format, defaults to text
+* -l --lang language filter
+* -h --help shows this text message
+* -v --version prints package version
+
+### Examples
+
+Extract all javascript snippets in text format
+
+    markdown2code --lang javascript README.md
+
+Extract all code snippets in JSON format
+
+    markdown2code --format JSON README.md
+

@@ -1,0 +1,36 @@
+[
+  {
+    "code": [
+      "npm install markdown2code"
+    ]
+  },  {
+    "lang": "bash"
+    "code": [
+      "npm install markdown2code -g"
+    ]
+  },  {
+    "lang": "javascript"
+    "code": [
+      "const markdown2code = require('markdown2code')",
+      "",
+      "const fs = require('fs')",
+      "const input = fs.createReadStream('README.md')",
+      "const output = process.stdout",
+      "",
+      "markdown2code(input, output)"
+    ]
+  },  {
+    "lang": "json"
+    "code": [
+      "[",
+      "  {",
+      "    \"lang\": \"javascript\",",
+      "    \"code\": [",
+      "      \"// Hello\",",
+      "      \"console.log(\\"hello world\\")\"",
+      "    ]",
+      "  }",
+      "]"
+    ]
+  }
+]

@@ -1,12 +1,19 @@
 {
   "name": "markdown2code",
   "version": "0.2.0",
-  "description": "extracts code blocks from markdown and streams it out as JSON",
+  "description": "extracts code blocks (surrounded by triple backticks) from markdown and streams it out as text or JSON",
   "bin": "./cli.js",
   "scripts": {
     "lint": "standa",
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
-    "test": "node ./cli.js README.md"
+    "test": "npm run test_default_opts; npm run test_format_JSON; npm run test_format_JSON_lang_bash; npm run test_format_text; npm run test_help; npm run test_lang_bash; npm run test_lang_javascript;",
+    "test_default_opts": "node ./cli.js README.md > test/default_opts.txt",
+    "test_format_JSON": "node ./cli.js --format JSON README.md > test/format_JSON.json",
+    "test_format_JSON_lang_bash": "node ./cli.js --format JSON --lang bash README.md > test/format_JSON_lang_bash.json",
+    "test_format_text": "node ./cli.js --format text README.md > test/format_text.txt",
+    "test_help": "node ./cli.js --help > test/help.txt",
+    "test_lang_bash": "node ./cli.js --lang bash README.md > test/lang_bash.sh",
+    "test_lang_javascript": "node ./cli.js --lang javascript README.md > test/lang_javascript.js"
   },
   "pre-commit": [
     "lint"
@@ -31,5 +38,8 @@
   "devDependencies": {
     "pre-commit": "^1.2.2",
     "standa": "^1.1.0"
+  },
+  "dependencies": {
+    "nopt": "^4.0.1"
   }
 }
