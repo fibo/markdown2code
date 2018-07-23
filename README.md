@@ -3,8 +3,8 @@
 > extracts code blocks (surrounded by triple backticks) from markdown
 
 [Installation](#installation) |
-[CLI](#cli) |
 [API](#api) |
+[CLI](#cli) |
 [License](#license)
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
