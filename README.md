@@ -35,7 +35,7 @@ See also [CLI Usage](#usage) and [Example](#example) sections.
 
 ### Usage
 
-    markdown2code [--format JSON|text] [--lang <language>] file.md
+    markdown2code [--lang <language>] file.md
 
 ### Options
 
