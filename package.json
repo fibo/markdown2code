@@ -4,16 +4,11 @@
   "description": "extracts code blocks from markdown",
   "bin": "./cli.js",
   "scripts": {
-    "lint": "standa",
-    "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
     "test": "npm run test_help; npm run test_-l_bash; npm run test_--lang_javascript;",
     "test_help": "node ./cli.js --help > test/help.txt",
     "test_-l_bash": "node ./cli.js -l bash README.md > test/l_bash.sh",
     "test_--lang_javascript": "node ./cli.js --lang javascript README.md > test/lang_javascript.js"
   },
-  "pre-commit": [
-    "lint"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fibo/markdown2code.git"
@@ -28,10 +23,6 @@
     "url": "https://github.com/fibo/markdown2code/issues"
   },
   "homepage": "https://github.com/fibo/markdown2code#readme",
-  "devDependencies": {
-    "pre-commit": "^1.2.2",
-    "standa": "^2.1.0"
-  },
   "dependencies": {
     "nopt": "^4.0.1"
   }
