@@ -1,7 +1,7 @@
 {
   "name": "markdown2code",
   "version": "1.0.2",
-  "description": "extracts code blocks (surrounded by triple backticks) from markdown",
+  "description": "extracts code blocks from markdown",
   "bin": "./cli.js",
   "scripts": {
     "lint": "standa",
@@ -22,10 +22,7 @@
     "markdown",
     "literate-programming"
   ],
-  "author": {
-    "name": "Gianluca Casati",
-    "url": "http://g14n.info"
-  },
+  "author": "Gianluca Casati (https://fibo.github.io/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fibo/markdown2code/issues"

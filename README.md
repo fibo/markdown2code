@@ -1,6 +1,6 @@
 # markdown2code
 
-> extracts code blocks (surrounded by triple backticks) from markdown
+> extract code blocks from markdown
 
 [Installation](#installation) |
 [API](#api) |
@@ -13,7 +13,7 @@
 
 With [npm](https://www.npmjs.com/) do
 
-```
+```sh
 npm install markdown2code
 ```
 
@@ -92,5 +92,5 @@ markdown2code(input, output)
 
 ## License
 
-[MIT](http://g14n.info/mit-license/)
+[MIT](http://fibo.github.io/mit-license)
 
