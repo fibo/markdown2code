@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/fibo/markdown2code#readme",
   "dependencies": {
-    "nopt": "^4.0.1"
+    "nopt": "^9.0.0"
   }
 }
